@@ -13,11 +13,11 @@ from tqdm.auto import tqdm
 
 # Config
 MODEL_NAME = "HuggingFaceTB/fineweb-edu-classifier"
-DATASET_NAME = "sumuks/Ultra-FineWeb-1B"
-OUTPUT_REPO = "sumuks/UFE-CLEAN-1B"
+DATASET_NAME = "sumuks/Ultra-FineWeb-10B"
+OUTPUT_REPO = "sumuks/UFE-CLEAN-10B"
 BATCH_SIZE = 4096
 BUFFER_SIZE = 100_000  # Load this many samples into memory
-STREAMING = True
+STREAMING = False
 
 accelerator = Accelerator(mixed_precision="bf16")
 
